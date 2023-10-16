@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3838"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDel"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#EBEF60"
+        android:text="Удалить"
+        android:textColor="#4A4141"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCarInfo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnNextCar"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="53dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#EBEF60"
+        android:rotation="0"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCarInfo"
+        app:layout_constraintTop_toTopOf="@+id/btnPrevCar" />
+
+    <TextView
+        android:id="@+id/tvCarInfo"
+        android:layout_width="242dp"
+        android:layout_height="477dp"
+        android:autoSizeTextType="none"
+        android:background="#F1EAEA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/btnPrevCar"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="53dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#EBEF60"
+        android:rotation="180"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/tvCarInfo"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCarInfo" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#EBEF60"
+        android:text="Изменить"
+        android:textColor="#4A4141"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
+        app:layout_constraintTop_toTopOf="@+id/btnDel" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#EBEF60"
+        android:text="Добавить"
+        android:textColor="#4A4141"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toTopOf="@+id/btnEdit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2B682"
+    tools:context=".EditCarActivity">
+
+    <TextView
+        android:id="@+id/tvAdditional"
+        android:layout_width="138dp"
+        android:layout_height="42dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Дополнительно"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edAdditional"
+        app:layout_constraintStart_toStartOf="@+id/tvMinTurningRadius"
+        app:layout_constraintTop_toTopOf="@+id/edAdditional" />
+
+    <TextView
+        android:id="@+id/tvMinTurningRadius"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Мин. радиус поворота, м"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTrunkVolume"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrunkVolume" />
+
+    <EditText
+        android:id="@+id/edMinTurningRadius"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edTrunkVolume"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edTrunkVolume"
+        app:layout_constraintTop_toTopOf="@+id/tvMinTurningRadius" />
+
+    <TextView
+        android:id="@+id/tvTrunkVolume"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Объем багажника, л"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCurbWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaxSpeed" />
+
+    <EditText
+        android:id="@+id/edTrunkVolume"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edMaxSpeed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edMaxSpeed"
+        app:layout_constraintTop_toTopOf="@+id/tvTrunkVolume" />
+
+    <TextView
+        android:id="@+id/tvMaxSpeed"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Максимальная скорость, км/ч"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCurbWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurbWeight" />
+
+    <EditText
+        android:id="@+id/edMaxSpeed"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edCurbWeight"
+        app:layout_constraintStart_toStartOf="@+id/edCurbWeight"
+        app:layout_constraintTop_toTopOf="@+id/tvMaxSpeed" />
+
+    <TextView
+        android:id="@+id/tvCurbWeight"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Снаряженная масса, кг"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNumOfDoors"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumOfDoors" />
+
+    <EditText
+        android:id="@+id/edCurbWeight"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edNumOfDoors"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edNumOfDoors"
+        app:layout_constraintTop_toTopOf="@+id/tvCurbWeight" />
+
+    <TextView
+        android:id="@+id/tvNumOfDoors"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Количество дверей"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPeriod"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeriod" />
+
+    <EditText
+        android:id="@+id/edNumOfDoors"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edPeriod"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edPeriod"
+        app:layout_constraintTop_toTopOf="@+id/tvNumOfDoors" />
+
+    <TextView
+        android:id="@+id/tvPeriod"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Марка"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/edPeriod"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toTopOf="@+id/tvPeriod" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="193dp"
+        android:layout_height="37dp"
+        android:autoSizeTextType="none"
+        android:text="Характеристики"
+        android:textAlignment="center"
+        android:textColor="#191818"
+        android:textColorHighlight="#EFEDED"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#F3C5C5"
+        android:text="Отмена"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAdditional"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnAddCar"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#C7ED68"
+        android:text="Добавить"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="none"
+        android:background="#EAE7D0"
+        android:gravity="center"
+        android:text="Название"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:background="#000000"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/edAdditional"
+        android:layout_width="205dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:background="#F6F0F0"
+        android:backgroundTint="#F6F0F0"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edMinTurningRadius"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edMinTurningRadius"
+        app:layout_constraintTop_toBottomOf="@+id/edMinTurningRadius"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
