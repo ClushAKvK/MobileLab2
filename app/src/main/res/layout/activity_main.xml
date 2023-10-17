@@ -43,13 +43,14 @@
         android:layout_height="477dp"
         android:autoSizeTextType="none"
         android:background="#F1EAEA"
+        android:hint="Добавьте машину"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <Button
         android:id="@+id/btnPrevCar"
