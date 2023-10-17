@@ -41,8 +41,8 @@ class CarModel: ViewModel() {
     fun getNextCar() {
         if (tempCarIdx + 1 < carBank.size)
             tempCarIdx += 1
-        else
-            tempCarIdx = 0
+//        else
+//            tempCarIdx = 0
 
         updateTempCarData()
     }
@@ -68,6 +68,7 @@ class CarModel: ViewModel() {
 
     fun updateCar(car: CarParameters) {
         carBank[tempCarIdx] = car
+        updateTempCarData()
     }
 
     fun deleteCar() {

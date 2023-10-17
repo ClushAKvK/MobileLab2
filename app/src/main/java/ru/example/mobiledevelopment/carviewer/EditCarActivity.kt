@@ -64,8 +64,8 @@ class EditCarActivity : AppCompatActivity() {
                     edName.text.toString(),
                     edPeriod.text.toString(),
                     edNumOfDoors.text.toString(),
-                    edMaxSpeed.text.toString(),
                     edCurbWeight.text.toString(),
+                    edMaxSpeed.text.toString(),
                     edTrunkVolume.text.toString(),
                     edMinTurningRadius.text.toString(),
                     edAdditional.text.toString()
